@@ -1,12 +1,8 @@
-* {
-    margin: none;
-    padding: none;
-}
-
+/* Main Layout */
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
     gap: 5px;
     height: 100vh;
     padding: none;
@@ -29,4 +25,133 @@
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     background-color: rgb(107, 111, 115);
+}
+
+/* Sidebar Layout */
+
+.sidebarGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 2fr;
+    height: 100vh;
+}
+
+.sidebarLogo {
+    background-color: coral;
+}
+
+.sidebarLinks {
+    background-color: lightseagreen;
+}
+
+.sidebarSettings {
+    background-color: lightpink;
+}
+
+/* Header Layout */
+
+.headerGrid {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    height: 100%;
+}
+
+.headerSearch {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    background-color: lightgoldenrodyellow;
+}
+
+.headerButton {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    background-color: aquamarine;
+}
+
+/* Main Layout */
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+}
+
+.mainProject {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background-color: lightslategray;
+}
+
+.mainAnnouncement {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: lightblue;
+}
+
+.mainTrend {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: lightgreen;
+}
+
+/* Project Layout */
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 5px;
+    height: 100%;
+}
+
+.project {
+    background-color: lightcyan;
+    border-radius: 8px;
+}
+
+/* Announcement Layout */
+
+.announcementGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2px;
+    padding: 5px;
+    height: 100%;
+}
+
+.announcement {
+    background-color: cornflowerblue;
+    border-radius: 8px;
+}
+
+/* Trending Layout */
+
+.trendGrid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2px;
+    padding: 0px 5px 0px 5px;
+    height: 100%;
+}
+
+.trendItem {
+    grid-column: 1 / 3;
+    background-color: crimson;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.imageTag {
+    display: flex;
+}
+
+.handle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }

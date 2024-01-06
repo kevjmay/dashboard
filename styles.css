@@ -1,13 +1,14 @@
 body {
     font-family: 'Roboto', sans-serif;
+    margin: none;
 }
 
 /* Main Layout */
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
-    gap: 5px;
+    grid-template-rows: 1fr 10fr;
+    /* gap: 5px; */
     height: 100vh;
     padding: none;
     margin: none;
@@ -22,13 +23,13 @@ body {
 .sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    background-color: rgb(61, 151, 230);
+    background-color: #fed7aa;
 }
 
 .main {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    background-color: rgb(107, 111, 115);
+    background-color: #fff7ed;
 }
 
 /* Sidebar Layout */
@@ -41,7 +42,7 @@ body {
 }
 
 .sidebarLogo {
-    background-color: coral;
+    background-color: #fed7aa;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -68,7 +69,7 @@ body {
 }
 
 .sidebarLinks {
-    background-color: coral;
+    background-color: #fed7aa;
     display: grid;
     grid-template-columns: 1fr;
     align-content: center;
@@ -89,7 +90,7 @@ body {
 }
 
 .sidebarSettings {
-    background-color: coral;
+    background-color: #fed7aa;
     display: grid;
     grid-template-columns: 1fr;
     align-items: end;
@@ -116,20 +117,86 @@ body {
 .headerGrid {
     display: grid;
     grid-template-columns: 1fr 6fr 2fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr;
     height: 100%;
 }
 
 .headerSearch {
     grid-column: 1 / 4;
-    grid-row: 1 / 2;
-    background-color: lightgoldenrodyellow;
+    grid-row: 1;
+    background-color: #ffedd5;
+}
+
+.searchGrid {
+    display: grid;
+    grid-template-columns: 1fr 10fr 3fr;
+    align-items: center;
+}
+
+.searchIcon {
+    display: flex;
+    justify-content: center;
+}
+
+.searchGrid img {
+    height: 30px;
+}
+
+.searchFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.profilePicture {
+    background: #fb923c;
+    border-radius: 50%;
+    padding: 5px;
 }
 
 .headerButton {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
-    background-color: aquamarine;
+    background-color: #ffedd5;
+}
+
+.socials img {
+    height: 50px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.socials p {
+    color: #fed7aa;
+}
+
+.buttonsGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.input {
+    border-radius: 8px;
+}
+
+.hButton {
+    background-color: #fdba74;
+    border-style: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 8px;
 }
 
 /* Main Layout */
@@ -200,7 +267,7 @@ body {
 }
 
 .announcement {
-    background-color: #ffffff;
+    background-color: #fff7ed;
     padding: 5px;
     border-radius: 8px;
 }
@@ -220,7 +287,7 @@ body {
 
 .trendItem {
     grid-column: 1 / 3;
-    background-color: #ffffff;
+    background-color: #fff7ed;
     display: grid;
     grid-template-columns: 1fr 4fr;
     justify-content: start;
